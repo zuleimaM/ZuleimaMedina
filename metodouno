@@ -1,11 +1,33 @@
-public static void main(String SerieLetras)
+public class MyClass {
+    
+    public static void main(String[] args){
+       this.imprimir("a:3, b:4, a:6,f:0, h:2, b:10");
+        
+    }
+   public void imprimir(String SerieLetras)
 {
- String[]Resultado;
- String[]elementos = SerieLetras.split(",")
-  for(int i =0;i<elementos.length;i++){
-   string letra=elementos[i].charAt(0);
-   int numero=elementos[i].charAt(0);
-     if(letra =='a')
+    
 
+ String[]Resultado= new String[5];
+ String[]elementos = SerieLetras.split(",");// se separa los elementos por la coma y se alamcenan en un arreglo
+  for(int i =0;i<elementos.length;i++){
+   String letra= elementos[i].substring(0); // se recorre el arreglo y se optiene la letra y el numero
+   int numero = Integer.parseInt(elementos[i].substring(2));
+     if(letra.equals('a'))
+     numero=+numero;// se suma el numero segun la letra
+      Resultado[0]="a:"+ Integer.toString(numero);
+       if(letra.equals('b'))
+        numero=+numero;
+          Resultado[1]="b:"+Integer.toString(numero);
+         if(letra.equals('h'))
+          numero=+numero;
+          Resultado[2]="h:"+ Integer.toString(numero);
+            if(letra.equals('f'))
+             numero=+numero;
+           Resultado[3]="f:"+ Integer.toString(numero);
+           
+           
+      System.out.println(Resultado);
+    }
 }
 }
