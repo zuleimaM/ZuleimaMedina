@@ -1,0 +1,11 @@
+public static void main(String SerieLetras)
+{
+ String[]Resultado;
+ String[]elementos = SerieLetras.split(",")
+  for(int i =0;i<elementos.length;i++){
+   string letra=elementos[i].charAt(0);
+   int numero=elementos[i].charAt(0);
+     if(letra =='a')
+
+}
+}
