@@ -1,0 +1,12 @@
+//metodo recibe un arreglo de enteros
+public static void main(int[] enteros)
+{
+int resultado;
+  for(int c;i<enteros.length;c++)// se recorre el arreglo
+  {
+     if(enteros[c]%2!=0)// se valida si el entero es impar
+     resultado++;  // se incrementa el contador
+  }
+ System.out.println(resultado);// se imprime la cantidad de valores impares
+}
+
