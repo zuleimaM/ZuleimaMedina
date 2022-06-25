@@ -1,5 +1,7 @@
 public Class NumerosRomanos
-public Static Void main(int a)
+public string NumerosRomanos(int a)
 {
+int mil,cent,dec,uni;
+String result="";
 
 }
